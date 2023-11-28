@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="e31x_ps_bd_auto_cc_2_synth_1" LaunchPart="xc7z020clg400-2" LaunchTime="1701068600">
+  <File Type="PA-TCL" Name="e31x_ps_bd_auto_cc_2.tcl"/>
+  <File Type="REPORTS-TCL" Name="e31x_ps_bd_auto_cc_2_reports.tcl"/>
+  <File Type="RDS-RDS" Name="e31x_ps_bd_auto_cc_2.vds"/>
+  <File Type="RDS-UTIL" Name="e31x_ps_bd_auto_cc_2_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="e31x_ps_bd_auto_cc_2_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="e31x_ps_bd_auto_cc_2.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/e31x_ps_bd_auto_cc_2">
+    <File Path="$PSRCDIR/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_auto_cc_2/e31x_ps_bd_auto_cc_2.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="H:/RF_RADIO/uhd/fpga/usrp3/top/e31x/build-ip/xc7z020clg484-3/e31x_ps_bd/e31x_ps_bd/ip/e31x_ps_bd_auto_cc_2/e31x_ps_bd_auto_cc_2.xci"/>
+        <Attr Name="ImportTime" Val="0"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="e31x_ps_bd_auto_cc_2"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/e31x_ps_bd_auto_cc_2">
+    <File Path="$PSRCDIR/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_auto_cc_2/e31x_ps_bd_auto_cc_2.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="H:/RF_RADIO/uhd/fpga/usrp3/top/e31x/build-ip/xc7z020clg484-3/e31x_ps_bd/e31x_ps_bd/ip/e31x_ps_bd_auto_cc_2/e31x_ps_bd_auto_cc_2.xci"/>
+        <Attr Name="ImportTime" Val="0"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="e31x_ps_bd_auto_cc_2"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="H:/RF_RADIO/uhd/fpga/usrp3/top/e31x/build-E310_SG3/e31x_project.srcs/utils_1/imports/synth_1/e31x.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

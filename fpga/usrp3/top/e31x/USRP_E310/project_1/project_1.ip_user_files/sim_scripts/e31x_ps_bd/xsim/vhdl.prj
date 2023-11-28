@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../bd/e31x_ps_bd/ip/e31x_ps_bd_axi_dma_eth_internal_0/sim/e31x_ps_bd_axi_dma_eth_internal_0.vhd" \
+"../../../bd/e31x_ps_bd/ip/e31x_ps_bd_smartconnect_dma_0/bd_0/ip/ip_1/sim/bd_cc08_psr_aclk_0.vhd" \
+
+nosort

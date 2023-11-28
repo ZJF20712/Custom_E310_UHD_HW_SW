@@ -1,0 +1,36 @@
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2022.2/data/xilinx_vip/include" --include "../../../../project_1.gen/sources_1/bd/e31x_ps_bd/ipshared/ec67/hdl" --include "../../../../project_1.gen/sources_1/bd/e31x_ps_bd/ipshared/ee60/hdl" --include "../../../../project_1.gen/sources_1/bd/e31x_ps_bd/ipshared/f0b6/hdl/verilog" --include "../../../../project_1.gen/sources_1/bd/e31x_ps_bd/ipshared/66be/hdl/verilog" \
+"../../../bd/e31x_ps_bd/ip/e31x_ps_bd_axi_protocol_convert_rx_0/sim/e31x_ps_bd_axi_protocol_convert_rx_0.v" \
+"../../../bd/e31x_ps_bd/ip/e31x_ps_bd_axi_protocol_convert_tx_0/sim/e31x_ps_bd_axi_protocol_convert_tx_0.v" \
+"../../../bd/e31x_ps_bd/ip/e31x_ps_bd_xbar_0/sim/e31x_ps_bd_xbar_0.v" \
+"../../../bd/e31x_ps_bd/ip/e31x_ps_bd_auto_cc_3/sim/e31x_ps_bd_auto_cc_3.v" \
+"../../../bd/e31x_ps_bd/ip/e31x_ps_bd_auto_pc_0/sim/e31x_ps_bd_auto_pc_0.v" \
+"../../../bd/e31x_ps_bd/ip/e31x_ps_bd_auto_cc_0/sim/e31x_ps_bd_auto_cc_0.v" \
+"../../../bd/e31x_ps_bd/ip/e31x_ps_bd_auto_cc_1/sim/e31x_ps_bd_auto_cc_1.v" \
+"../../../bd/e31x_ps_bd/ip/e31x_ps_bd_auto_cc_2/sim/e31x_ps_bd_auto_cc_2.v" \
+"../../../bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/sim/e31x_ps_bd_processing_system7_0_0.v" \
+"../../../bd/e31x_ps_bd/ip/e31x_ps_bd_smartconnect_dma_0/bd_0/ip/ip_0/sim/bd_cc08_one_0.v" \
+
+sv xil_defaultlib --include "C:/Xilinx/Vivado/2022.2/data/xilinx_vip/include" --include "../../../../project_1.gen/sources_1/bd/e31x_ps_bd/ipshared/ec67/hdl" --include "../../../../project_1.gen/sources_1/bd/e31x_ps_bd/ipshared/ee60/hdl" --include "../../../../project_1.gen/sources_1/bd/e31x_ps_bd/ipshared/f0b6/hdl/verilog" --include "../../../../project_1.gen/sources_1/bd/e31x_ps_bd/ipshared/66be/hdl/verilog" \
+"../../../bd/e31x_ps_bd/ip/e31x_ps_bd_smartconnect_dma_0/bd_0/ip/ip_2/sim/bd_cc08_s00mmu_0.sv" \
+"../../../bd/e31x_ps_bd/ip/e31x_ps_bd_smartconnect_dma_0/bd_0/ip/ip_3/sim/bd_cc08_s00tr_0.sv" \
+"../../../bd/e31x_ps_bd/ip/e31x_ps_bd_smartconnect_dma_0/bd_0/ip/ip_4/sim/bd_cc08_s00sic_0.sv" \
+"../../../bd/e31x_ps_bd/ip/e31x_ps_bd_smartconnect_dma_0/bd_0/ip/ip_5/sim/bd_cc08_s00a2s_0.sv" \
+"../../../bd/e31x_ps_bd/ip/e31x_ps_bd_smartconnect_dma_0/bd_0/ip/ip_6/sim/bd_cc08_sarn_0.sv" \
+"../../../bd/e31x_ps_bd/ip/e31x_ps_bd_smartconnect_dma_0/bd_0/ip/ip_7/sim/bd_cc08_srn_0.sv" \
+"../../../bd/e31x_ps_bd/ip/e31x_ps_bd_smartconnect_dma_0/bd_0/ip/ip_8/sim/bd_cc08_sawn_0.sv" \
+"../../../bd/e31x_ps_bd/ip/e31x_ps_bd_smartconnect_dma_0/bd_0/ip/ip_9/sim/bd_cc08_swn_0.sv" \
+"../../../bd/e31x_ps_bd/ip/e31x_ps_bd_smartconnect_dma_0/bd_0/ip/ip_10/sim/bd_cc08_sbn_0.sv" \
+"../../../bd/e31x_ps_bd/ip/e31x_ps_bd_smartconnect_dma_0/bd_0/ip/ip_11/sim/bd_cc08_m00s2a_0.sv" \
+"../../../bd/e31x_ps_bd/ip/e31x_ps_bd_smartconnect_dma_0/bd_0/ip/ip_12/sim/bd_cc08_m00e_0.sv" \
+
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2022.2/data/xilinx_vip/include" --include "../../../../project_1.gen/sources_1/bd/e31x_ps_bd/ipshared/ec67/hdl" --include "../../../../project_1.gen/sources_1/bd/e31x_ps_bd/ipshared/ee60/hdl" --include "../../../../project_1.gen/sources_1/bd/e31x_ps_bd/ipshared/f0b6/hdl/verilog" --include "../../../../project_1.gen/sources_1/bd/e31x_ps_bd/ipshared/66be/hdl/verilog" \
+"../../../bd/e31x_ps_bd/ip/e31x_ps_bd_smartconnect_dma_0/bd_0/sim/bd_cc08.v" \
+"../../../bd/e31x_ps_bd/ip/e31x_ps_bd_smartconnect_dma_0/sim/e31x_ps_bd_smartconnect_dma_0.v" \
+"../../../bd/e31x_ps_bd/ip/e31x_ps_bd_xlconcat_0_0/sim/e31x_ps_bd_xlconcat_0_0.v" \
+"../../../bd/e31x_ps_bd/ip/e31x_ps_bd_xlslice_2_0/sim/e31x_ps_bd_xlslice_2_0.v" \
+"../../../bd/e31x_ps_bd/ip/e31x_ps_bd_xlconstant_0_0/sim/e31x_ps_bd_xlconstant_0_0.v" \
+"../../../bd/e31x_ps_bd/sim/e31x_ps_bd.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

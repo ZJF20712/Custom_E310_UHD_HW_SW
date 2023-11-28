@@ -1,0 +1,28 @@
+type: e31x
+type_id: E310
+family: 7SERIES
+transports:
+  - name: dma
+    type: dma
+    width: 64
+
+clocks:
+  - name: radio
+  - name: dram
+
+io_ports:
+  ctrlport:
+    type: ctrlport
+    drive: slave
+    rename:
+      pattern: (ctrlport_)(.*)
+      repl: m_\1\2
+  time:
+    type: timekeeper
+    drive: broadcaster
+  radio:
+    type: radio
+    drive: master
+  dram:
+    type: axi4_mm
+    drive: slave

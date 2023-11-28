@@ -1,0 +1,35 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-1278,-601",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port M00_AXI -pg 1 -lvl 3 -x 660 -y 180 -defaultsOSRD
+preplace port S00_AXI -pg 1 -lvl 0 -x -10 -y 50 -defaultsOSRD
+preplace port S01_AXI -pg 1 -lvl 0 -x -10 -y 270 -defaultsOSRD
+preplace port port-id_M00_AXI_ACLK -pg 1 -lvl 0 -x -10 -y 110 -defaultsOSRD
+preplace port port-id_M00_AXI_ARESETN -pg 1 -lvl 0 -x -10 -y 130 -defaultsOSRD
+preplace port port-id_S00_AXI_ACLK -pg 1 -lvl 0 -x -10 -y 70 -defaultsOSRD
+preplace port port-id_S00_AXI_ARESETN -pg 1 -lvl 0 -x -10 -y 90 -defaultsOSRD
+preplace port port-id_S01_AXI_ACLK -pg 1 -lvl 0 -x -10 -y 290 -defaultsOSRD
+preplace port port-id_S01_AXI_ARESETN -pg 1 -lvl 0 -x -10 -y 310 -defaultsOSRD
+preplace inst s00_width_conv -pg 1 -lvl 1 -x 190 -y 90 -defaultsOSRD
+preplace inst s01_width_conv -pg 1 -lvl 1 -x 190 -y 310 -defaultsOSRD
+preplace inst xbar -pg 1 -lvl 2 -x 500 -y 180 -defaultsOSRD
+preplace netloc M00_AXI_ACLK_1 1 0 2 20 190 NJ
+preplace netloc M00_AXI_ARESETN_1 1 0 2 10 210 NJ
+preplace netloc S00_AXI_ACLK_1 1 0 1 NJ 70
+preplace netloc S00_AXI_ARESETN_1 1 0 1 NJ 90
+preplace netloc S01_AXI_ACLK_1 1 0 1 NJ 290
+preplace netloc S01_AXI_ARESETN_1 1 0 1 NJ 310
+preplace netloc S00_AXI_1 1 0 1 NJ 50
+preplace netloc S01_AXI_1 1 0 1 NJ 270
+preplace netloc s00_width_conv_M_AXI 1 1 1 360 90n
+preplace netloc s01_width_conv_M_AXI 1 1 1 360 170n
+preplace netloc xbar_M00_AXI 1 2 1 N 180
+levelinfo -pg 1 -10 190 500 660
+pagesize -pg 1 -db -bbox -sgen -200 -10 770 410
+"
+}
+0

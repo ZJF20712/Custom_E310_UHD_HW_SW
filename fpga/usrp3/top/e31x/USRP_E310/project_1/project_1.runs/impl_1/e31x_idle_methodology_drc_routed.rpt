@@ -1,0 +1,94 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Tue Nov 28 05:53:27 2023
+| Host         : Fan running 64-bit major release  (build 9200)
+| Command      : report_methodology -file e31x_idle_methodology_drc_routed.rpt -pb e31x_idle_methodology_drc_routed.pb -rpx e31x_idle_methodology_drc_routed.rpx
+| Design       : e31x_idle
+| Device       : xc7z020clg400-2
+| Speed File   : -2
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 7
++----------+----------+--------------------------------------------------------+------------+
+| Rule     | Severity | Description                                            | Violations |
++----------+----------+--------------------------------------------------------+------------+
+| LUTAR-1  | Warning  | LUT drives async reset alert                           | 1          |
+| PDRC-190 | Warning  | Suboptimally placed synchronized register chain        | 2          |
+| TIMING-9 | Warning  | Unknown CDC Logic                                      | 1          |
+| XDCB-5   | Warning  | Runtime inefficient way to find pin objects            | 1          |
+| XDCC-7   | Warning  | Scoped Clock constraint overwritten on the same source | 2          |
++----------+----------+--------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell e31x_ps_bd_inst/dma/axi_protocol_convert_rx/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/gpregsm1.curr_fwft_state[1]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) e31x_ps_bd_inst/dma/axi_protocol_convert_rx/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[2]/CLR,
+e31x_ps_bd_inst/dma/axi_protocol_convert_rx/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[3]/CLR,
+e31x_ps_bd_inst/dma/axi_protocol_convert_rx/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[4]/CLR,
+e31x_ps_bd_inst/dma/axi_protocol_convert_rx/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg/CLR,
+e31x_ps_bd_inst/dma/axi_protocol_convert_rx/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg/CLR,
+e31x_ps_bd_inst/dma/axi_protocol_convert_rx/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[0]/CLR,
+e31x_ps_bd_inst/dma/axi_protocol_convert_rx/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[1]/CLR,
+e31x_ps_bd_inst/dma/axi_protocol_convert_rx/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[2]/CLR,
+e31x_ps_bd_inst/dma/axi_protocol_convert_rx/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[3]/CLR,
+e31x_ps_bd_inst/dma/axi_protocol_convert_rx/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[4]/CLR,
+e31x_ps_bd_inst/dma/axi_protocol_convert_rx/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[0]/PRE,
+e31x_ps_bd_inst/dma/axi_protocol_convert_rx/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[1]/CLR,
+e31x_ps_bd_inst/dma/axi_protocol_convert_rx/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[2]/CLR,
+e31x_ps_bd_inst/dma/axi_protocol_convert_rx/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[3]/CLR,
+e31x_ps_bd_inst/dma/axi_protocol_convert_rx/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[4]/CLR
+ (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+PDRC-190#1 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell bus_reset_gen/reset_double_sync/synchronizer_false_path/stages[7].value_reg[7][0] in site SLICE_X46Y117 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell bus_reset_gen/reset_double_sync/synchronizer_false_path/stages[8].value_reg[8][0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#2 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell clk40_reset_gen/reset_double_sync/synchronizer_false_path/stages[7].value_reg[7][0] in site SLICE_X50Y117 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell clk40_reset_gen/reset_double_sync/synchronizer_false_path/stages[8].value_reg[8][0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+XDCB-5#1 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hierarchical -filter {NAME =~ */synchronizer_false_path/stages[0].value_reg[0][*]/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '15' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_timing.xdc (Line: 143)
+Related violations: <none>
+
+XDCC-7#1 Warning
+Scoped Clock constraint overwritten on the same source  
+A new clock constraint create_clock overrides a previous scoped clock constraint defined on the same source. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 10.000 -name bus_clk [get_pins {e31x_ps_bd_inst/processing_system7_0/inst/PS7_i/FCLKCLK[0]}] (Source: G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_timing.xdc (Line: 26))
+Previous: create_clock -period 10.000 -name clk_fpga_0 [get_pins {PS7_i/FCLKCLK[0]}] (Source: g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0.xdc (Line: 20))
+Related violations: <none>
+
+XDCC-7#2 Warning
+Scoped Clock constraint overwritten on the same source  
+A new clock constraint create_clock overrides a previous scoped clock constraint defined on the same source. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 25.000 -name clk40 [get_pins {e31x_ps_bd_inst/processing_system7_0/inst/PS7_i/FCLKCLK[1]}] (Source: G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_timing.xdc (Line: 30))
+Previous: create_clock -period 25.000 -name clk_fpga_1 [get_pins {PS7_i/FCLKCLK[1]}] (Source: g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0.xdc (Line: 26))
+Related violations: <none>
+
+

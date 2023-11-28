@@ -1,0 +1,50 @@
+type: x300
+type_id: A300
+family: 7SERIES
+transports:
+  - name: eth0
+    type: 10G
+    width: 64
+  - name: eth1
+    type: 1G
+    width: 64
+  - name: pcie
+    type: PCIe
+    width: 64
+
+clocks:
+  - name: radio
+  - name: ce
+  - name: dram
+
+io_ports:
+  ctrlport_radio0:
+    type: ctrlport
+    drive: slave
+    rename:
+      pattern: (ctrlport_)(.*)
+      repl: m_\1radio0_\2
+  ctrlport_radio1:
+    type: ctrlport
+    drive: slave
+    rename:
+      pattern: (ctrlport_)(.*)
+      repl: m_\1radio1_\2
+  time:
+    type: timekeeper
+    drive: broadcaster
+  radio0:
+    type: radio
+    drive: master
+    rename:
+      pattern: (.*)
+      repl: \1_radio0
+  radio1:
+    type: radio
+    drive: master
+    rename:
+      pattern: (.*)
+      repl: \1_radio1
+  dram:
+    type: axi4_mm
+    drive: slave

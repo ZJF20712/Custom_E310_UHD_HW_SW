@@ -1,0 +1,815 @@
+Format: http://dep.debian.net/deps/dep5/
+Upstream-Name: UHD
+Upstream-Contact: http://www.ettus.com/contact
+Source: https://github.com/EttusResearch/uhd
+Comment: Only the host directory of the distributed source is used
+ to build the uhd-host package for Debian main.
+Copyright: Copyright 2010-2023 Ettus Research, a National Instruments Brand
+License: GPL-3+
+
+Files: *
+Copyright: Copyright 2010-2023 Ettus Research, A National Instruments Brand
+License: GPL-3+
+
+Files: host/lib/deps/rpclib/*
+Copyright: Copyright (c) 2015-2017, Tamás Szelei
+License: MIT
+
+Files: host/lib/deps/pybind11/include/*
+Copyright: Copyright (c) 2016 Wenzel Jakob
+License: PyBind11-BSD
+
+Files: host/lib/deps/flatbuffers/include/*
+Copyright: Copyright 2014 Google Inc.
+License: Apache-2.0
+
+Files: firmware/fx2/*
+Copyright: 2003,2004,2006,2007 Free Software Foundation, Inc.
+License: GPL-3+
+
+Files:  images/*
+        firmware/fx2/b100/CMakeLists.txt
+        firmware/fx2/CMakeLists.txt
+        firmware/fx2/config/CMakeASM_SDCCInformation.cmake
+        firmware/fx2/config/Rename.cmake
+        firmware/fx2/config/Toolchain-sdcc.cmake
+        firmware/fx2/usrp1/CMakeLists.txt
+        firmware/fx3/*
+        firmware/octoclock/*
+        firmware/usrp3/x300/*
+        firmware/README.md
+Copyright: Copyright 2010-2021 Ettus Research, A National Instruments Company
+License: GPL-3+
+Comment: Not used for uhd-host package
+
+Files: debian/*
+Copyright: © 2011-2012 A. Maitland Bottoms <bottoms@debian.org>
+License: GPL-3+
+
+Files: host/cmake/Modules/CMakeRC.cmake
+Copyright: Copyright (c) 2017 vector-of-bool <vectorofbool@gmail.com>
+License: MIT
+
+Files:  firmware/fx2/config/CMakeTestASM_SDCCCompiler.cmake
+        firmware/fx2/config/CMakeDetermineASM_SDCCCompiler.cmake
+Copyright: 2008-2009 Kitware, Inc.
+License: Kitware-BSD
+Comment: Not used for uhd-host package
+
+Files:  firmware/usrp2/apps*
+        firmware/usrp2/bin/*
+        firmware/usrp2/lib/*
+        firmware/usrp2/lwip/*.h
+        firmware/usrp2/usrp2/*
+        firmware/usrp3/lwip/*.h
+Copyright: Copyright 2007-2009 Free Software Foundation, Inc.
+License: GPL-3+
+Comment: Not used for uhd-host package
+
+Files:  firmware/*/lwip/lwip-1.3.1/*
+Copyright: (c) 2001-2004 Swedish Institute of Computer Science.
+License: lwip-BSD
+Comment: liIP Author Adam Dunkels <adam@sics.se>
+ http://savannah.nongnu.org/projects/lwip/
+ Also includes other BSD licensed code from additional copyright
+ holders outlined in detail below...
+
+Files:  firmware/*/lwip/lwip-1.3.1/src/core/dns.c
+        firmware/*/lwip/lwip-1.3.1/src/include/lwip/dns.h
+Copyright: (c) 2002-2003, Adam Dunkels.
+License: lwip-BSD
+Comment: Not used for uhd-host package
+ * Port to lwIP from uIP
+ * by Jim Pettinato April 2007
+ * ported from uIP resolv.c
+
+Files:  firmware/*/lwip/lwip-1.3.1/src/core/ipv4/autoip.c
+        firmware/*/lwip/lwip-1.3.1/src/include/ipv4/lwip/autoip.h
+Copyright: (c) 2007 Dominik Spies <kontakt@dspies.de>
+ * All rights reserved.
+License: lwip-BSD
+Comment: Not used for uhd-host package
+
+Files:  firmware/*/lwip/lwip-1.3.1/src/core/dhcp.c
+        firmware/*/lwip/lwip-1.3.1/src/include/lwip/snmp.h
+        firmware/*/lwip/lwip-1.3.1/src/include/netif/etharp.h
+        firmware/*/lwip/lwip-1.3.1/src/netif/etharp.c
+Copyright: Copyright (c) 2001-2004 Leon Woestenberg
+           Copyright (c) 2001-2004 Axon Digital Design B.V., The Netherlands.
+           Copyright (c) 2001-2003 Swedish Institute of Computer Science.
+License: lwip-BSD
+Comment: Not used for uhd-host package
+
+Files:  firmware/*/lwip/lwip-1.3.1/src/include/lwip/snmp_asn1.h
+        firmware/*/lwip/lwip-1.3.1/src/include/lwip/snmp_msg.h
+        firmware/*/lwip/lwip-1.3.1/src/include/lwip/snmp_structs.h
+        firmware/*/lwip/lwip-1.3.1/src/core/snmp/mib2.c
+        firmware/*/lwip/lwip-1.3.1/src/core/snmp/msg_out.c
+        firmware/*/lwip/lwip-1.3.1/src/core/snmp/msg_in.c
+        firmware/*/lwip/lwip-1.3.1/src/core/snmp/asn1_dec.c
+        firmware/*/lwip/lwip-1.3.1/src/core/snmp/asn1_enc.c
+        firmware/*/lwip/lwip-1.3.1/src/core/snmp/mib_structs.c
+Copyright: (c) 2001-2004,2006 Axon Digital Design B.V., The Netherlands.
+License: lwip-BSD
+Comment:    Not used for uhd-host package
+            Christiaan Simons <christiaan.simons@axon.tv>
+
+Files: firmware/*/lwip/lwip-1.3.1/src/netif/ppp/pppdebug.h
+Copyright: (c) 2003 by Marc Boucher, Services Informatiques (MBSI) inc.
+ portions Copyright (c) 1998 Global Election Systems Inc.
+ portions Copyright (c) 2001 by Cognizant Pty Ltd.
+License: MBSI-BSD
+Comment: Not used for uhd-host package
+
+Files:  firmware/*/lwip/lwip-1.3.1/src/netif/ppp/randm.c
+        firmware/*/lwip/lwip-1.3.1/src/netif/ppp/randm.h
+Copyright: (c) 2003 by Marc Boucher, Services Informatiques (MBSI) inc.
+ Copyright (c) 1998 Global Election Systems Inc.
+License: MBSI-BSD
+Comment: Not used for uhd-host package
+ * 03-01-01 Marc Boucher <marc@mbsi.ca>
+ *   Ported to lwIP.
+ * 98-06-03 Guy Lancaster <lancasterg@acm.org>, Global Election Systems Inc.
+ *   Extracted from avos.
+
+Files:  firmware/*/lwip/lwip-1.3.1/src/netif/ppp/ppp.c
+        firmware/*/lwip/lwip-1.3.1/src/netif/ppp/ppp.h
+        firmware/*/lwip/lwip-1.3.1/src/netif/ppp/auth.c
+        firmware/*/lwip/lwip-1.3.1/src/netif/ppp/auth.h
+        firmware/*/lwip/lwip-1.3.1/src/netif/ppp/chap.c
+        firmware/*/lwip/lwip-1.3.1/src/netif/ppp/chap.h
+        firmware/*/lwip/lwip-1.3.1/src/netif/ppp/chpms.c
+        firmware/*/lwip/lwip-1.3.1/src/netif/ppp/chpms.h
+        firmware/*/lwip/lwip-1.3.1/src/netif/ppp/pap.c
+        firmware/*/lwip/lwip-1.3.1/src/netif/ppp/pap.h
+        firmware/*/lwip/lwip-1.3.1/src/netif/ppp/lcp.c
+        firmware/*/lwip/lwip-1.3.1/src/netif/ppp/lcp.h
+        firmware/*/lwip/lwip-1.3.1/src/netif/ppp/ipcp.c
+        firmware/*/lwip/lwip-1.3.1/src/netif/ppp/ipcp.h
+        firmware/*/lwip/lwip-1.3.1/src/netif/ppp/fsm.c
+        firmware/*/lwip/lwip-1.3.1/src/netif/ppp/fsm.h
+        firmware/*/lwip/lwip-1.3.1/src/netif/ppp/magic.c
+        firmware/*/lwip/lwip-1.3.1/src/netif/ppp/magic.h
+Copyright: (c) 1989 Carnegie Mellon University.
+ * All rights reserved.
+           (c) 1993,1994 The Australian National University.
+ * All rights reserved.
+           (c) 2003 by Marc Boucher, Services Informatiques (MBSI) inc.
+  portions Copyright (c) 1997,1998 by Global Election Systems Inc.
+           (c) 1991 Gregory M. Christy
+ * All rights reserved.
+           (c) 1995 Eric Rosenquist, Strata Software Limited.
+ * All rights reserved.
+License: Carnegie-Mellon-University or Australian-National-University or MBSI-BSD
+         or Christy or Rosenquist
+Comment: Not used for uhd-host package
+
+Files:  firmware/*/lwip/lwip-1.3.1/src/netif/ppp/ppp_oe.c
+        firmware/*/lwip/lwip-1.3.1/src/include/netif/ppp_oe.h
+Copyright: (c) 2006 by Marc Boucher, Services Informatiques (MBSI) inc.
+           (c) 2002 The NetBSD Foundation, Inc.
+License: MBSI-BSD or NetBSD
+Comment: Not used for uhd-host package
+ /* based on NetBSD: if_pppoe.c,v 1.64 2006/01/31 23:50:15 martin Exp */
+ * This code is derived from software contributed to The NetBSD Foundation
+ * by Martin Husemann <martin@NetBSD.org>.
+
+Files:  firmware/*/lwip/lwip-1.3.1/src/core/ipv4/igmp.c
+        firmware/*/lwip/lwip-1.3.1/src/include/ipv4/lwip/igmp.h
+Copyright: (c) 2002 CITEL Technologies Ltd.
+ * All rights reserved.
+License: CITEL-BSD
+Comment: Not used for uhd-host package
+
+Files:  firmware/*/lwip/lwip-1.3.1/src/netif/ppp/vj.c
+        firmware/*/lwip/lwip-1.3.1/src/netif/ppp/vj.h
+Copyright: (c) 1989 Regents of the University of California.
+ * All rights reserved.
+License: VJ-BSD
+Comment: Not used for uhd-host package
+ * Van Jacobson (van@helios.ee.lbl.gov), Dec 31, 1989:
+ *   Initial distribution.
+ *
+ * Modified June 1993 by Paul Mackerras, paulus@cs.anu.edu.au,
+ * so that the entire packet being decompressed doesn't have
+ * to be in contiguous memory (just the compressed header).
+ *
+ * Modified March 1998 by Guy Lancaster, glanca@gesn.com,
+ * for a 16 bit processor.
+
+Files:  firmware/*/lwip/lwip-1.3.1/src/netif/ppp/md5.c
+        firmware/*/lwip/lwip-1.3.1/src/netif/ppp/md5.h
+Copyright: (C) 1990, RSA Data Security, Inc. All rights reserved.
+License: RSA-BSD
+Comment: Not used for uhd-host package
+
+Files: mpm/lib/mykonos/adi/*
+Copyright: Copyright (c) 2015-2017 Analog Devices Inc.
+License: AD9371-API
+Comment: Not used for uhd-host package
+
+License: GPL-2+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License can be found in `/usr/share/common-licenses/GPL-3'.
+
+License: GPL-3+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License can be found in `/usr/share/common-licenses/GPL-3'.
+
+License: Kitware-BSD
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ .
+ * Redistributions of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer.
+ .
+ * Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+ .
+ * Neither the names of Kitware, Inc., the Insight Software Consortium,
+   nor the names of their contributors may be used to endorse or promote
+   products derived from this software without specific prior written
+   permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+ HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+License: lwip-BSD
+ * Redistribution and use in source and binary forms, with or without modification,
+ * are permitted provided that the following conditions are met:
+ *
+ * 1. Redistributions of source code must retain the above copyright notice,
+ *    this list of conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright notice,
+ *    this list of conditions and the following disclaimer in the documentation
+ *    and/or other materials provided with the distribution.
+ * 3. The name of the author may not be used to endorse or promote products
+ *    derived from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
+ * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+ * SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+ * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+ * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+ * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+ * OF SUCH DAMAGE.
+
+License: MBSI-BSD
+ * The authors hereby grant permission to use, copy, modify, distribute,
+ * and license this software and its documentation for any purpose, provided
+ * that existing copyright notices are retained in all copies and that this
+ * notice and the following disclaimer are included verbatim in any
+ * distributions. No written agreement, license, or royalty fee is required
+ * for any of the authorized uses.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE CONTRIBUTORS *AS IS* AND ANY EXPRESS OR
+ * IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+ * IN NO EVENT SHALL THE CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+ * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+ * NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+ * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+License: Rosenquist
+ * Redistribution and use in source and binary forms are permitted
+ * provided that the above copyright notice and this paragraph are
+ * duplicated in all such forms and that any documentation,
+ * advertising materials, and other materials related to such
+ * distribution and use acknowledge that the software was developed
+ * by Eric Rosenquist.  The name of the author may not be used to
+ * endorse or promote products derived from this software without
+ * specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR
+ * IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
+ * WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+License: Christy
+ * Redistribution and use in source and binary forms are permitted
+ * provided that the above copyright notice and this paragraph are
+ * duplicated in all such forms and that any documentation,
+ * advertising materials, and other materials related to such
+ * distribution and use acknowledge that the software was developed
+ * by Gregory M. Christy.  The name of the author may not be used to
+ * endorse or promote products derived from this software without
+ * specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR
+ * IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
+ * WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+License: Australian-National-University
+ * Permission to use, copy, modify, and distribute this software and its
+ * documentation is hereby granted, provided that the above copyright
+ * notice appears in all copies.  This software is provided without any
+ * warranty, express or implied. The Australian National University
+ * makes no representations about the suitability of this software for
+ * any purpose.
+ *
+ * IN NO EVENT SHALL THE AUSTRALIAN NATIONAL UNIVERSITY BE LIABLE TO ANY
+ * PARTY FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES
+ * ARISING OUT OF THE USE OF THIS SOFTWARE AND ITS DOCUMENTATION, EVEN IF
+ * THE AUSTRALIAN NATIONAL UNIVERSITY HAVE BEEN ADVISED OF THE POSSIBILITY
+ * OF SUCH DAMAGE.
+ *
+ * THE AUSTRALIAN NATIONAL UNIVERSITY SPECIFICALLY DISCLAIMS ANY WARRANTIES,
+ * INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY
+ * AND FITNESS FOR A PARTICULAR PURPOSE.  THE SOFTWARE PROVIDED HEREUNDER IS
+ * ON AN "AS IS" BASIS, AND THE AUSTRALIAN NATIONAL UNIVERSITY HAS NO
+ * OBLIGATION TO PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS,
+ * OR MODIFICATIONS.
+
+License: Carnegie-Mellon-University
+ * Redistribution and use in source and binary forms are permitted
+ * provided that the above copyright notice and this paragraph are
+ * duplicated in all such forms and that any documentation,
+ * advertising materials, and other materials related to such
+ * distribution and use acknowledge that the software was developed
+ * by Carnegie Mellon University.  The name of the
+ * University may not be used to endorse or promote products derived
+ * from this software without specific prior written permission.
+ * THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR
+ * IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
+ * WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+License: CITEL-BSD
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ * 1. Redistributions of source code must retain the above copyright
+ *    notice, this list of conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright
+ *    notice, this list of conditions and the following disclaimer in the
+ *    documentation and/or other materials provided with the distribution.
+ * 3. Neither the name of CITEL Technologies Ltd nor the names of its contributors
+ *    may be used to endorse or promote products derived from this software
+ *    without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY CITEL TECHNOLOGIES AND CONTRIBUTORS ``AS IS''
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED.  IN NO EVENT SHALL CITEL TECHNOLOGIES OR CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+ * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ * SUCH DAMAGE.
+ *
+ * This file is a contribution to the lwIP TCP/IP stack.
+ * The Swedish Institute of Computer Science and Adam Dunkels
+ * are specifically granted permission to redistribute this
+ * source code.
+
+License: NetBSD
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ * 1. Redistributions of source code must retain the above copyright
+ *    notice, this list of conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright
+ *    notice, this list of conditions and the following disclaimer in the
+ *    documentation and/or other materials provided with the distribution.
+ * 3. All advertising materials mentioning features or use of this software
+ *    must display the following acknowledgement:
+ *        This product includes software developed by the NetBSD
+ *        Foundation, Inc. and its contributors.
+ * 4. Neither the name of The NetBSD Foundation nor the names of its
+ *    contributors may be used to endorse or promote products derived
+ *    from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE NETBSD FOUNDATION, INC. AND CONTRIBUTORS
+ * ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+ * TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+ * PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR CONTRIBUTORS
+ * BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ * POSSIBILITY OF SUCH DAMAGE.
+
+License: VJ-BSD
+ * Redistribution and use in source and binary forms are permitted
+ * provided that the above copyright notice and this paragraph are
+ * duplicated in all such forms and that any documentation,
+ * advertising materials, and other materials related to such
+ * distribution and use acknowledge that the software was developed
+ * by the University of California, Berkeley.  The name of the
+ * University may not be used to endorse or promote products derived
+ * from this software without specific prior written permission.
+ * THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR
+ * IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
+ * WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+License: RSA-BSD
+ ** License to copy and use this software is granted provided that    **
+ ** it is identified as the "RSA Data Security, Inc. MD5 Message-     **
+ ** Digest Algorithm" in all material mentioning or referencing this  **
+ ** software or this function.                                        **
+ **                                                                   **
+ ** License is also granted to make and use derivative works          **
+ ** provided that such works are identified as "derived from the RSA  **
+ ** Data Security, Inc. MD5 Message-Digest Algorithm" in all          **
+ ** material mentioning or referencing the derived work.              **
+ **                                                                   **
+ ** RSA Data Security, Inc. makes no representations concerning       **
+ ** either the merchantability of this software or the suitability    **
+ ** of this software for any particular purpose.  It is provided "as  **
+ ** is" without express or implied warranty of any kind.              **
+ **                                                                   **
+ ** These notices must be retained in any copies of any part of this  **
+ ** documentation and/or software.
+
+License: Altera-boilerplate
+ Any  megafunction  design,  and related netlist (encrypted  or  decrypted),
+ support information,  device programming or simulation file,  and any other
+ associated  documentation or information  provided by  Altera  or a partner
+ under  Altera's   Megafunction   Partnership   Program  may  be  used  only
+ to program  PLD  devices (but not masked  PLD  devices) from  Altera.   Any
+ other  use  of such  megafunction  design,  netlist,  support  information,
+ device programming or simulation file,  or any other  related documentation
+ or information  is prohibited  for  any  other purpose,  including, but not
+ limited to  modification,  reverse engineering,  de-compiling, or use  with
+ any other  silicon devices,  unless such use is  explicitly  licensed under
+ a separate agreement with  Altera  or a megafunction partner.  Title to the
+ intellectual property,  including patents,  copyrights,  trademarks,  trade
+ secrets,  or maskworks,  embodied in any such megafunction design, netlist,
+ support  information,  device programming or simulation file,  or any other
+ related documentation or information provided by  Altera  or a megafunction
+ partner, remains with Altera, the megafunction partner, or their respective
+ licensors. No other licenses, including any licenses needed under any third
+ party's intellectual property, are provided herein.
+
+License: Xilinx-boilerplate
+ This file is owned and controlled by Xilinx and must be used
+ solely for design, simulation, implementation and creation of
+ design files limited to Xilinx devices or technologies. Use
+ with non-Xilinx devices or technologies is expressly prohibited
+ and immediately terminates your license.
+ .
+ XILINX IS PROVIDING THIS DESIGN, CODE, OR INFORMATION "AS IS"
+ SOLELY FOR USE IN DEVELOPING PROGRAMS AND SOLUTIONS FOR
+ XILINX DEVICES.  BY PROVIDING THIS DESIGN, CODE, OR INFORMATION
+ AS ONE POSSIBLE IMPLEMENTATION OF THIS FEATURE, APPLICATION
+ OR STANDARD, XILINX IS MAKING NO REPRESENTATION THAT THIS
+ IMPLEMENTATION IS FREE FROM ANY CLAIMS OF INFRINGEMENT,
+ AND YOU ARE RESPONSIBLE FOR OBTAINING ANY RIGHTS YOU MAY REQUIRE
+ FOR YOUR IMPLEMENTATION.  XILINX EXPRESSLY DISCLAIMS ANY
+ WARRANTY WHATSOEVER WITH RESPECT TO THE ADEQUACY OF THE
+ IMPLEMENTATION, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OR
+ REPRESENTATIONS THAT THIS IMPLEMENTATION IS FREE FROM CLAIMS OF
+ INFRINGEMENT, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+ FOR A PARTICULAR PURPOSE.
+
+License: Benz
+ The information and description contained herein is the
+ property of Chuck Benz.
+ .
+ Permission is granted for any reuse of this information
+ and description as long as this copyright notice is
+ preserved.  Modifications may be made as long as this
+ notice is preserved.
+
+License: AEMB-LGPL-3+
+ AEMB is free software: you can redistribute it and/or modify it
+ under the terms of the GNU Lesser General Public License as
+ published by the Free Software Foundation, either version 3 of the
+ License, or (at your option) any later version.
+ .
+ AEMB is distributed in the hope that it will be useful, but WITHOUT
+ ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+ or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General
+ Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public
+ License along with AEMB. If not, see <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU Lesser General
+ Public License can be found in `/usr/share/common-licenses/LGPL-3'.
+
+License: Herveille
+ This source file may be used and distributed without
+ restriction provided that this copyright statement is not
+ removed from the file and that any derivative work contains
+ the original copyright notice and the associated disclaimer.
+ .
+     THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY
+ EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+ TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+ FOR A PARTICULAR PURPOSE. IN NO EVENT SHALL THE AUTHOR
+ OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+ GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+ BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ LIABILITY, WHETHER IN  CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT
+ OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+
+License: Srot-LGPL-2.1+
+ This source file may be used and distributed without
+ restriction provided that this copyright statement is not
+ removed from the file and that any derivative work contains
+ the original copyright notice and the associated disclaimer.
+ .
+ This source file is free software; you can redistribute it
+ and/or modify it under the terms of the GNU Lesser General
+ Public License as published by the Free Software Foundation;
+ either version 2.1 of the License, or (at your option) any
+ later version.
+ .
+ This source is distributed in the hope that it will be
+ useful, but WITHOUT ANY WARRANTY; without even the implied
+ warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+ PURPOSE.  See the GNU Lesser General Public License for more
+ details.
+ .
+ You should have received a copy of the GNU Lesser General
+ Public License along with this source; if not, download it
+ from http://www.opencores.org/lgpl.shtml
+ .
+ On Debian systems, the complete text of the GNU Lesser General
+ Public License can be found in `/usr/share/common-licenses/LGPL-2.1'.
+
+License: GPL-2
+ Redistribution and use in source and synthezised forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ .
+ Redistributions of source code must retain the above copyright notice,
+ this list of conditions and the following disclaimer.
+ .
+ Redistributions in synthesized form must reproduce the above copyright
+ notice, this list of conditions and the following disclaimer in the
+ documentation and/or other materials provided with the distribution.
+ .
+ Neither the name of the author nor the names of other contributors may
+ be used to endorse or promote products derived from this software without
+ specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+ THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+ PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+ .
+ Please report bugs to the author, but before you do so, please
+ make sure that this is not a derivative work and that
+ you have the latest version of this file.
+ .
+ The latest version of this file can be found at:
+      http://www.opencores.org/projects.cgi/web/spi_boot/overview
+
+License: Milkymist-LGPL-2+
+ * Milkymist is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU Library General Public License as published
+ * by the Free Software Foundation; either version 2, or (at your option)
+ * any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Library General Public License for more details.
+ *
+ * You should have received a copy of the GNU Library General Public
+ * License along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301,
+ * USA.
+
+License: zpu-FreeBSD
+ The FreeBSD license
+ .
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ .
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above
+    copyright notice, this list of conditions and the following
+    disclaimer in the documentation and/or other materials
+    provided with the distribution.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE ZPU PROJECT ``AS IS'' AND ANY
+ EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+ THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+ PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+ ZPU PROJECT OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
+ INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+ STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ .
+ The views and conclusions contained in the software and documentation
+ are those of the authors and should not be interpreted as representing
+ official policies, either expressed or implied, of the ZPU Project.
+
+License: MIT
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ THE SOFTWARE.
+
+License: AD9371-API
+ Analog Devices, Inc. ("ADI")
+ Source Code Software License Agreement
+ 20130524-CISC-CTSLA
+ .
+ DOWNLOADING, REPRODUCING, DISTRIBUTING OR OTHERWISE USING THE SOFTWARE
+ CONSTITUTES ACCEPTANCE OF THIS LICENSE. THE SOFTWARE MAY NOT BE USED EXCEPT AS
+ EXPRESSLY AUTHORIZED UNDER THIS LICENSE.
+ .
+ The software is protected by copyright law and international copyright
+ treaties.
+ .
+ License: Subject to the terms and conditions of this license, the software may
+ be reproduced, modified and distributed in source code and object code form.
+ .
+ Conditions:
+ Any distribution of the software must include a complete copy of this license
+ and retain all copyright and other proprietary notices. The software that is
+ distributed (including modified versions of the software) shall be subject to
+ the terms and conditions of this license.
+ The software may not be combined or merged with other software in any manner
+ that would cause the software to become subject to terms and conditions which
+ differ from those of this license.
+ Licensee shall not use the name or any trademark of ADI (including those of
+ its licensors) or any contributor to endorse or promote products without prior
+ written consent of the owner of the name or trademark. The term “contributor”
+ means any person or entity that modifies or distributes the software.
+ Modified versions of the Software must be conspicuously marked as such.
+ Use of the software may or may not infringe patent rights of one or more
+ patent holders. This license does not alleviate the obligation to obtain
+ separate licenses from patent holders to use the software.
+ All rights not expressly granted hereunder are reserved.
+ This license shall be governed by the laws of Massachusetts, without regard to
+ its conflict of laws rules. The software shall only be used in compliance with
+ all applicable laws and regulations, including without limitation export
+ control laws.
+ .
+ WARRANTY DISCLAIMER: THE SOFTWARE AND ANY RELATED INFORMATION AND/OR ADVICE IS
+ PROVIDED ON AN “AS IS” BASIS, WITHOUT REPRESENTATIONS, GUARANTEES OR
+ WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, ORAL OR WRITTEN, INCLUDING WITHOUT
+ LIMITATION, WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+ TITLE AND NON-INFRINGEMENT. There is no obligation to provide software support
+ or updates. The Software is not fault-tolerant and is not intended for use in
+ high risk applications, including without limitation in the operation of
+ nuclear facilities, aircraft navigation or control systems, air traffic
+ control, life support machines, weapons systems or any other application in
+ which the failure of the software could lead to death, personal injury, or
+ severe physical or environmental damages. The software is not authorized to be
+ used under such circumstances.
+ .
+ LIMITATION OF LIABILITY: TO THE MAXIMUM EXTENT PERMITTED BY LAW ADI (INCLUDING
+ ITS LICENSORS) AND CONTRIBUTORS SHALL NOT BE LIABLE FOR ANY DAMAGES ARISING
+ FROM OR RELATED TO THE SOFTWARE, ITS USE OR ANY RELATED INFORMATION AND/OR
+ SERVICES, INCLUDING BUT NOT LIMITED TO ANY DIRECT, INDIRECT, INCIDENTAL,
+ SPECIAL, PUNITIVE, EXEMPLARY, CONSEQUENTIAL OR ANALOGOUS DAMAGES (INCLUDING
+ WITHOUT LIMITATION ANY DAMAGES RESULTING FROM LOSS OF USE, DATA, REVENUE,
+ PROFITS, OR SAVINGS, COMPUTER DAMAGE OR ANY OTHER CAUSE), UNDER ANY LEGAL
+ THEORY (INCLUDING WITHOUT LIMITATION CONTRACT, WARRANTY, TORT, NEGLIGENCE,
+ STRICT OR PRODUCT LIABILITY), EVEN IF IT HAS BEEN INFORMED OF THE POSSIBILITY
+ OF SUCH DAMAGES. Some jurisdictions do not permit the exclusion or limitation
+ of liability for consequential, incidental or other damages, and, as such,
+ some portion of the above limitation may not apply. In such jurisdictions,
+ liability is limited to the greatest extent permitted by law.
+ .
+ Third Party Software: The software may be accompanied by or include software
+ made available by one or more third parties (“Third Party Software”). Each
+ portion of Third Party Software is subject to its own separate software
+ license terms and conditions (“Third Party Licenses”). The Third Party
+ Licenses for Third Party Software delivered with the software are set forth
+ or identified (by url or otherwise) in (i) Appendix A to this license (if
+ any), (ii) the applicable software header or footer text, (iii) a text file
+ located in the directory of the applicable Third Party Software component
+ and/or (iv) such other location customarily used for licensing terms. The use
+ of each portion of Third Party Software is subject to the Third Party
+ Licenses, and you agree that your use of any Third Party Software is bound by
+ the applicable Third Party License. You agree to review and comply with all
+ applicable Third Party Licenses prior to any use or distribution of any Third
+ Party Software. Third Party Software is provided on an “as is” basis without
+ any representation, warranty or liability of any kind. ADI (including its
+ licensors) and contributors shall have no liability or responsibility for the
+ operation or performance of the Third Party Software and shall not be liable
+ for any damages, costs, or expenses, direct or indirect, arising out of the
+ performance or failure to perform of the Third Party Software. ADI (including
+ its licensors) and contributors shall be entitled to the benefit of any and all
+ limitations of liability and disclaimers of warranties contained in the Third
+ Party Licenses. For the avoidance of doubt, this license does not alter, limit
+ or expand the terms and conditions of, or rights granted to you pursuant to,
+ Third Party Licenses
+
+License: PyBind11-BSD
+ Copyright (c) 2016 Wenzel Jakob <wenzel.jakob@epfl.ch>, All rights reserved.
+ .
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ .
+ 1. Redistributions of source code must retain the above copyright notice, this
+    list of conditions and the following disclaimer.
+ .
+ 2. Redistributions in binary form must reproduce the above copyright notice,
+    this list of conditions and the following disclaimer in the documentation
+    and/or other materials provided with the distribution.
+ .
+ 3. Neither the name of the copyright holder nor the names of its contributors
+    may be used to endorse or promote products derived from this software
+    without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+ FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ .
+ Please also refer to the file CONTRIBUTING.md, which clarifies licensing of
+ external contributions to this project including patches, pull requests, etc.
+
+License: Apache-2.0
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ .
+ http://www.apache.org/licenses/LICENSE-2.0
+ .
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ .
+ On Debian systems, the complete text of the Apache version 2.0 license
+ can be found in "/usr/share/common-licenses/Apache-2.0".

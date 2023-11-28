@@ -1,0 +1,313 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Nov 27 15:03:26 2023
+# Process ID: 25248
+# Current directory: G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.runs/e31x_ps_bd_axi_protocol_convert_tx_0_synth_1
+# Command line: vivado.exe -log e31x_ps_bd_axi_protocol_convert_tx_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source e31x_ps_bd_axi_protocol_convert_tx_0.tcl
+# Log file: G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.runs/e31x_ps_bd_axi_protocol_convert_tx_0_synth_1/e31x_ps_bd_axi_protocol_convert_tx_0.vds
+# Journal file: G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.runs/e31x_ps_bd_axi_protocol_convert_tx_0_synth_1\vivado.jou
+# Running On: Fan, OS: Windows, CPU Frequency: 2208 MHz, CPU Physical cores: 6, Host memory: 34212 MB
+#-----------------------------------------------------------
+source e31x_ps_bd_axi_protocol_convert_tx_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 409.668 ; gain = 49.691
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: e31x_ps_bd_axi_protocol_convert_tx_0
+Command: synth_design -top e31x_ps_bd_axi_protocol_convert_tx_0 -part xc7z020clg400-2 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 26192
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1258.109 ; gain = 408.047
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'e31x_ps_bd_axi_protocol_convert_tx_0' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_axi_protocol_convert_tx_0/synth/e31x_ps_bd_axi_protocol_convert_tx_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_axi_protocol_converter' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4807]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_axi3_conv' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:953]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_axi3_conv' (0#1) [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:953]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_axi_protocol_converter' (0#1) [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4807]
+INFO: [Synth 8-6155] done synthesizing module 'e31x_ps_bd_axi_protocol_convert_tx_0' (0#1) [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_axi_protocol_convert_tx_0/synth/e31x_ps_bd_axi_protocol_convert_tx_0.v:53]
+WARNING: [Synth 8-3848] Net M_AXI_WID in module/entity axi_protocol_converter_v2_1_27_axi3_conv does not have driver. [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:1056]
+WARNING: [Synth 8-7129] Port M_AXI_WID[0] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESETN in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWID[0] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[31] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[30] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[29] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[28] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[27] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[26] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[25] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[24] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[23] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[22] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[21] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[20] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[19] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[18] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[17] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[16] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[15] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[14] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[13] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[12] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[11] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[10] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[9] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[8] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[7] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[6] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[5] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[4] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[3] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[2] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[1] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWADDR[0] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWLEN[7] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWLEN[6] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWLEN[5] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWLEN[4] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWLEN[3] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWLEN[2] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWLEN[1] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWLEN[0] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWSIZE[2] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWSIZE[1] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWSIZE[0] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWBURST[1] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWBURST[0] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWLOCK[0] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWCACHE[3] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWCACHE[2] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWCACHE[1] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWCACHE[0] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWQOS[3] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWQOS[2] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWQOS[1] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWQOS[0] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWUSER[0] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWVALID in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[63] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[62] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[61] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[60] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[59] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[58] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[57] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[56] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[55] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[54] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[53] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[52] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[51] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[50] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[49] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[48] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[47] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[46] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[45] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[44] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[43] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[42] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[41] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[40] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[39] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[38] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[37] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[36] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[35] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[34] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[33] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[32] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[31] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[30] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[29] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[28] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WDATA[27] in module axi_protocol_converter_v2_1_27_axi3_conv is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:35 ; elapsed = 00:00:41 . Memory (MB): peak = 1480.598 ; gain = 630.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 1480.598 ; gain = 630.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 1480.598 ; gain = 630.535
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1480.598 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_axi_protocol_convert_tx_0/e31x_ps_bd_axi_protocol_convert_tx_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_axi_protocol_convert_tx_0/e31x_ps_bd_axi_protocol_convert_tx_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.runs/e31x_ps_bd_axi_protocol_convert_tx_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.runs/e31x_ps_bd_axi_protocol_convert_tx_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1488.168 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 1488.168 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:53 ; elapsed = 00:01:00 . Memory (MB): peak = 1488.168 ; gain = 638.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:53 ; elapsed = 00:01:00 . Memory (MB): peak = 1488.168 ; gain = 638.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.runs/e31x_ps_bd_axi_protocol_convert_tx_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:53 ; elapsed = 00:01:01 . Memory (MB): peak = 1488.168 ; gain = 638.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:53 ; elapsed = 00:01:01 . Memory (MB): peak = 1488.168 ; gain = 638.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:01:06 . Memory (MB): peak = 1488.168 ; gain = 638.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:10 ; elapsed = 00:01:18 . Memory (MB): peak = 1488.168 ; gain = 638.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:10 ; elapsed = 00:01:19 . Memory (MB): peak = 1488.168 ; gain = 638.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:10 ; elapsed = 00:01:19 . Memory (MB): peak = 1488.168 ; gain = 638.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:24 ; elapsed = 00:01:32 . Memory (MB): peak = 1488.168 ; gain = 638.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:24 ; elapsed = 00:01:32 . Memory (MB): peak = 1488.168 ; gain = 638.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:24 ; elapsed = 00:01:32 . Memory (MB): peak = 1488.168 ; gain = 638.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:24 ; elapsed = 00:01:32 . Memory (MB): peak = 1488.168 ; gain = 638.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:24 ; elapsed = 00:01:32 . Memory (MB): peak = 1488.168 ; gain = 638.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:24 ; elapsed = 00:01:32 . Memory (MB): peak = 1488.168 ; gain = 638.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:24 ; elapsed = 00:01:32 . Memory (MB): peak = 1488.168 ; gain = 638.105
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 160 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:44 ; elapsed = 00:01:27 . Memory (MB): peak = 1488.168 ; gain = 630.535
+Synthesis Optimization Complete : Time (s): cpu = 00:01:24 ; elapsed = 00:01:33 . Memory (MB): peak = 1488.168 ; gain = 638.105
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1488.168 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1488.168 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: f721b945
+INFO: [Common 17-83] Releasing license: Synthesis
+23 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:34 ; elapsed = 00:01:45 . Memory (MB): peak = 1488.168 ; gain = 1043.902
+INFO: [Common 17-1381] The checkpoint 'G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.runs/e31x_ps_bd_axi_protocol_convert_tx_0_synth_1/e31x_ps_bd_axi_protocol_convert_tx_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP e31x_ps_bd_axi_protocol_convert_tx_0, cache-ID = 176c8994a16e12bd
+INFO: [Common 17-1381] The checkpoint 'G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.runs/e31x_ps_bd_axi_protocol_convert_tx_0_synth_1/e31x_ps_bd_axi_protocol_convert_tx_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file e31x_ps_bd_axi_protocol_convert_tx_0_utilization_synth.rpt -pb e31x_ps_bd_axi_protocol_convert_tx_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 27 15:05:30 2023...

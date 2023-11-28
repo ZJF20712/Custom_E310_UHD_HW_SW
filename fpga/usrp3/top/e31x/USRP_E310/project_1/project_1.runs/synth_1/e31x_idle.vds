@@ -1,0 +1,917 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Nov 28 05:48:30 2023
+# Process ID: 25024
+# Current directory: G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log e31x_idle.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source e31x_idle.tcl
+# Log file: G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.runs/synth_1/e31x_idle.vds
+# Journal file: G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.runs/synth_1\vivado.jou
+# Running On: Fan, OS: Windows, CPU Frequency: 2208 MHz, CPU Physical cores: 6, Host memory: 34212 MB
+#-----------------------------------------------------------
+source e31x_idle.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 408.910 ; gain = 66.621
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental H:/RF_RADIO/uhd/fpga/usrp3/top/e31x/build-E310_SG3/e31x_project.srcs/utils_1/imports/synth_1/e31x.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from H:/RF_RADIO/uhd/fpga/usrp3/top/e31x/build-E310_SG3/e31x_project.srcs/utils_1/imports/synth_1/e31x.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top e31x_idle -part xc7z020clg400-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1556
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1292.617 ; gain = 407.820
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'e31x_idle' [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/sources_1/new/e31x_idle.v:14]
+INFO: [Synth 8-6157] synthesizing module 'reset_sync' [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/sources_1/imports/usrp3/lib/control/reset_sync.v:11]
+INFO: [Synth 8-6157] synthesizing module 'synchronizer' [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/sources_1/imports/usrp3/lib/control/synchronizer.v:46]
+	Parameter STAGES bound to: 10 - type: integer 
+	Parameter INITIAL_VAL bound to: 1 - type: integer 
+	Parameter FALSE_PATH_TO_IN bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'synchronizer_impl' [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/sources_1/imports/usrp3/lib/control/synchronizer_impl.v:8]
+	Parameter WIDTH bound to: 1 - type: integer 
+	Parameter STAGES bound to: 10 - type: integer 
+	Parameter INITIAL_VAL bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'synchronizer_impl' (0#1) [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/sources_1/imports/usrp3/lib/control/synchronizer_impl.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'synchronizer' (0#1) [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/sources_1/imports/usrp3/lib/control/synchronizer.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'reset_sync' (0#1) [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/sources_1/imports/usrp3/lib/control/reset_sync.v:11]
+INFO: [Synth 8-6157] synthesizing module 'e31x_ps_bd' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:590]
+INFO: [Synth 8-6157] synthesizing module 'e31x_ps_bd_xlconstant_0_0' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_xlconstant_0_0/synth/e31x_ps_bd_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (0#1) [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'e31x_ps_bd_xlconstant_0_0' (0#1) [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_xlconstant_0_0/synth/e31x_ps_bd_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'e31x_ps_bd_axi_interconnect_0_0' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:1679]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_42PLI8' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:2397]
+INFO: [Synth 8-6157] synthesizing module 'e31x_ps_bd_auto_cc_0' [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.runs/synth_1/.Xil/Vivado-25024-Fan/realtime/e31x_ps_bd_auto_cc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'e31x_ps_bd_auto_cc_0' (0#1) [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.runs/synth_1/.Xil/Vivado-25024-Fan/realtime/e31x_ps_bd_auto_cc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_42PLI8' (0#1) [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:2397]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_TX6TLY' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:2613]
+INFO: [Synth 8-6157] synthesizing module 'e31x_ps_bd_auto_cc_1' [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.runs/synth_1/.Xil/Vivado-25024-Fan/realtime/e31x_ps_bd_auto_cc_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'e31x_ps_bd_auto_cc_1' (0#1) [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.runs/synth_1/.Xil/Vivado-25024-Fan/realtime/e31x_ps_bd_auto_cc_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_TX6TLY' (0#1) [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:2613]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_1IIQ3E4' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:2829]
+INFO: [Synth 8-6157] synthesizing module 'e31x_ps_bd_auto_cc_2' [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.runs/synth_1/.Xil/Vivado-25024-Fan/realtime/e31x_ps_bd_auto_cc_2_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'e31x_ps_bd_auto_cc_2' (0#1) [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.runs/synth_1/.Xil/Vivado-25024-Fan/realtime/e31x_ps_bd_auto_cc_2_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'e31x_ps_bd_auto_cc_2' is unconnected for instance 'auto_cc' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:2988]
+WARNING: [Synth 8-7071] port 'm_axi_wstrb' of module 'e31x_ps_bd_auto_cc_2' is unconnected for instance 'auto_cc' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:2988]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'e31x_ps_bd_auto_cc_2' is unconnected for instance 'auto_cc' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:2988]
+WARNING: [Synth 8-7023] instance 'auto_cc' of module 'e31x_ps_bd_auto_cc_2' has 42 connections declared, but only 39 given [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:2988]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_1IIQ3E4' (0#1) [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:2829]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_U8CMOX' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:3030]
+INFO: [Synth 8-6157] synthesizing module 'e31x_ps_bd_auto_cc_3' [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.runs/synth_1/.Xil/Vivado-25024-Fan/realtime/e31x_ps_bd_auto_cc_3_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'e31x_ps_bd_auto_cc_3' (0#1) [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.runs/synth_1/.Xil/Vivado-25024-Fan/realtime/e31x_ps_bd_auto_cc_3_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'e31x_ps_bd_auto_pc_0' [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.runs/synth_1/.Xil/Vivado-25024-Fan/realtime/e31x_ps_bd_auto_pc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'e31x_ps_bd_auto_pc_0' (0#1) [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.runs/synth_1/.Xil/Vivado-25024-Fan/realtime/e31x_ps_bd_auto_pc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_U8CMOX' (0#1) [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:3030]
+INFO: [Synth 8-6157] synthesizing module 'e31x_ps_bd_xbar_0' [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.runs/synth_1/.Xil/Vivado-25024-Fan/realtime/e31x_ps_bd_xbar_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'e31x_ps_bd_xbar_0' (0#1) [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.runs/synth_1/.Xil/Vivado-25024-Fan/realtime/e31x_ps_bd_xbar_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'e31x_ps_bd_axi_interconnect_0_0' (0#1) [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:1679]
+INFO: [Synth 8-6157] synthesizing module 'dma_imp_52B0ZP' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:12]
+INFO: [Synth 8-6157] synthesizing module 'e31x_ps_bd_axi_dma_eth_internal_0' [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.runs/synth_1/.Xil/Vivado-25024-Fan/realtime/e31x_ps_bd_axi_dma_eth_internal_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'e31x_ps_bd_axi_dma_eth_internal_0' (0#1) [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.runs/synth_1/.Xil/Vivado-25024-Fan/realtime/e31x_ps_bd_axi_dma_eth_internal_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'e31x_ps_bd_axi_dma_eth_internal_0' is unconnected for instance 'axi_dma_eth_internal' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:420]
+WARNING: [Synth 8-7023] instance 'axi_dma_eth_internal' of module 'e31x_ps_bd_axi_dma_eth_internal_0' has 94 connections declared, but only 93 given [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:420]
+INFO: [Synth 8-6157] synthesizing module 'e31x_ps_bd_axi_protocol_convert_rx_0' [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.runs/synth_1/.Xil/Vivado-25024-Fan/realtime/e31x_ps_bd_axi_protocol_convert_rx_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'e31x_ps_bd_axi_protocol_convert_rx_0' (0#1) [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.runs/synth_1/.Xil/Vivado-25024-Fan/realtime/e31x_ps_bd_axi_protocol_convert_rx_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'e31x_ps_bd_axi_protocol_convert_tx_0' [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.runs/synth_1/.Xil/Vivado-25024-Fan/realtime/e31x_ps_bd_axi_protocol_convert_tx_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'e31x_ps_bd_axi_protocol_convert_tx_0' (0#1) [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.runs/synth_1/.Xil/Vivado-25024-Fan/realtime/e31x_ps_bd_axi_protocol_convert_tx_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'dma_imp_52B0ZP' (0#1) [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:12]
+INFO: [Synth 8-6157] synthesizing module 'e31x_ps_bd_processing_system7_0_0' [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.runs/synth_1/.Xil/Vivado-25024-Fan/realtime/e31x_ps_bd_processing_system7_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'e31x_ps_bd_processing_system7_0_0' (0#1) [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.runs/synth_1/.Xil/Vivado-25024-Fan/realtime/e31x_ps_bd_processing_system7_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'I2C0_SDA_O' of module 'e31x_ps_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:1384]
+WARNING: [Synth 8-7071] port 'I2C0_SDA_T' of module 'e31x_ps_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:1384]
+WARNING: [Synth 8-7071] port 'I2C0_SCL_O' of module 'e31x_ps_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:1384]
+WARNING: [Synth 8-7071] port 'I2C0_SCL_T' of module 'e31x_ps_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:1384]
+WARNING: [Synth 8-7071] port 'UART0_TX' of module 'e31x_ps_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:1384]
+WARNING: [Synth 8-7071] port 'S_AXI_GP0_BID' of module 'e31x_ps_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:1384]
+WARNING: [Synth 8-7071] port 'S_AXI_GP0_RID' of module 'e31x_ps_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:1384]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_ARREADY' of module 'e31x_ps_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:1384]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_RLAST' of module 'e31x_ps_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:1384]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_RVALID' of module 'e31x_ps_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:1384]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_RRESP' of module 'e31x_ps_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:1384]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_BID' of module 'e31x_ps_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:1384]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_RID' of module 'e31x_ps_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:1384]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_RDATA' of module 'e31x_ps_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:1384]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_RCOUNT' of module 'e31x_ps_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:1384]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_WCOUNT' of module 'e31x_ps_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:1384]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_RACOUNT' of module 'e31x_ps_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:1384]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_WACOUNT' of module 'e31x_ps_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:1384]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_AWREADY' of module 'e31x_ps_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:1384]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_BVALID' of module 'e31x_ps_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:1384]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_WREADY' of module 'e31x_ps_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:1384]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_BRESP' of module 'e31x_ps_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:1384]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_BID' of module 'e31x_ps_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:1384]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_RID' of module 'e31x_ps_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:1384]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_RCOUNT' of module 'e31x_ps_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:1384]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_WCOUNT' of module 'e31x_ps_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:1384]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_RACOUNT' of module 'e31x_ps_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:1384]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_WACOUNT' of module 'e31x_ps_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:1384]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'e31x_ps_bd_processing_system7_0_0' has 237 connections declared, but only 209 given [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:1384]
+INFO: [Synth 8-6157] synthesizing module 'e31x_ps_bd_smartconnect_dma_0' [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.runs/synth_1/.Xil/Vivado-25024-Fan/realtime/e31x_ps_bd_smartconnect_dma_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'e31x_ps_bd_smartconnect_dma_0' (0#1) [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.runs/synth_1/.Xil/Vivado-25024-Fan/realtime/e31x_ps_bd_smartconnect_dma_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'e31x_ps_bd_xlconcat_0_0' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_xlconcat_0_0/synth/e31x_ps_bd_xlconcat_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'e31x_ps_bd_xlconcat_0_0' (0#1) [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_xlconcat_0_0/synth/e31x_ps_bd_xlconcat_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'e31x_ps_bd_xlslice_2_0' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_xlslice_2_0/synth/e31x_ps_bd_xlslice_2_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (0#1) [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'e31x_ps_bd_xlslice_2_0' (0#1) [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_xlslice_2_0/synth/e31x_ps_bd_xlslice_2_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'e31x_ps_bd' (0#1) [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/synth/e31x_ps_bd.v:590]
+WARNING: [Synth 8-6104] Input port 'PS_CLK' has an internal driver [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/sources_1/new/e31x_idle.v:214]
+WARNING: [Synth 8-6104] Input port 'PS_PORB' has an internal driver [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/sources_1/new/e31x_idle.v:215]
+WARNING: [Synth 8-6104] Input port 'PS_SRSTB' has an internal driver [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/sources_1/new/e31x_idle.v:216]
+WARNING: [Synth 8-7071] port 'm_axi_eth_internal_araddr' of module 'e31x_ps_bd' is unconnected for instance 'e31x_ps_bd_inst' [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/sources_1/new/e31x_idle.v:173]
+WARNING: [Synth 8-7071] port 'm_axi_eth_internal_arprot' of module 'e31x_ps_bd' is unconnected for instance 'e31x_ps_bd_inst' [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/sources_1/new/e31x_idle.v:173]
+WARNING: [Synth 8-7071] port 'm_axi_eth_internal_arready' of module 'e31x_ps_bd' is unconnected for instance 'e31x_ps_bd_inst' [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/sources_1/new/e31x_idle.v:173]
+WARNING: [Synth 8-7071] port 'm_axi_eth_internal_arvalid' of module 'e31x_ps_bd' is unconnected for instance 'e31x_ps_bd_inst' [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/sources_1/new/e31x_idle.v:173]
+WARNING: [Synth 8-7071] port 'm_axi_eth_internal_awaddr' of module 'e31x_ps_bd' is unconnected for instance 'e31x_ps_bd_inst' [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/sources_1/new/e31x_idle.v:173]
+WARNING: [Synth 8-7071] port 'm_axi_eth_internal_awprot' of module 'e31x_ps_bd' is unconnected for instance 'e31x_ps_bd_inst' [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/sources_1/new/e31x_idle.v:173]
+WARNING: [Synth 8-7071] port 'm_axi_eth_internal_awready' of module 'e31x_ps_bd' is unconnected for instance 'e31x_ps_bd_inst' [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/sources_1/new/e31x_idle.v:173]
+WARNING: [Synth 8-7071] port 'm_axi_eth_internal_awvalid' of module 'e31x_ps_bd' is unconnected for instance 'e31x_ps_bd_inst' [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/sources_1/new/e31x_idle.v:173]
+WARNING: [Synth 8-7071] port 'm_axi_eth_internal_bready' of module 'e31x_ps_bd' is unconnected for instance 'e31x_ps_bd_inst' [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/sources_1/new/e31x_idle.v:173]
+WARNING: [Synth 8-7071] port 'm_axi_eth_internal_bresp' of module 'e31x_ps_bd' is unconnected for instance 'e31x_ps_bd_inst' [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/sources_1/new/e31x_idle.v:173]
+WARNING: [Synth 8-7071] port 'm_axi_eth_internal_bvalid' of module 'e31x_ps_bd' is unconnected for instance 'e31x_ps_bd_inst' [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/sources_1/new/e31x_idle.v:173]
+WARNING: [Synth 8-7071] port 'm_axi_eth_internal_rdata' of module 'e31x_ps_bd' is unconnected for instance 'e31x_ps_bd_inst' [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/sources_1/new/e31x_idle.v:173]
+WARNING: [Synth 8-7071] port 'm_axi_eth_internal_rready' of module 'e31x_ps_bd' is unconnected for instance 'e31x_ps_bd_inst' [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/sources_1/new/e31x_idle.v:173]
+WARNING: [Synth 8-7071] port 'm_axi_eth_internal_rresp' of module 'e31x_ps_bd' is unconnected for instance 'e31x_ps_bd_inst' [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/sources_1/new/e31x_idle.v:173]
+WARNING: [Synth 8-7071] port 'm_axi_eth_internal_rvalid' of module 'e31x_ps_bd' is unconnected for instance 'e31x_ps_bd_inst' [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/sources_1/new/e31x_idle.v:173]
+WARNING: [Synth 8-7071] port 'm_axi_eth_internal_wdata' of module 'e31x_ps_bd' is unconnected for instance 'e31x_ps_bd_inst' [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/sources_1/new/e31x_idle.v:173]
+WARNING: [Synth 8-7071] port 'm_axi_eth_internal_wready' of module 'e31x_ps_bd' is unconnected for instance 'e31x_ps_bd_inst' [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/sources_1/new/e31x_idle.v:173]
+WARNING: [Synth 8-7071] port 'm_axi_eth_internal_wstrb' of module 'e31x_ps_bd' is unconnected for instance 'e31x_ps_bd_inst' [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/sources_1/new/e31x_idle.v:173]
+WARNING: [Synth 8-7071] port 'm_axi_eth_internal_wvalid' of module 'e31x_ps_bd' is unconnected for instance 'e31x_ps_bd_inst' [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/sources_1/new/e31x_idle.v:173]
+WARNING: [Synth 8-7023] instance 'e31x_ps_bd_inst' of module 'e31x_ps_bd' has 115 connections declared, but only 96 given [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/sources_1/new/e31x_idle.v:173]
+INFO: [Synth 8-6155] done synthesizing module 'e31x_idle' (0#1) [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/sources_1/new/e31x_idle.v:14]
+WARNING: [Synth 8-7129] Port Din[15] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[14] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[13] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[12] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[11] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[10] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[9] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[8] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In9[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In32[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In33[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In34[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In35[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In36[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In37[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In38[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In39[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In40[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In41[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In42[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In43[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In44[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In45[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In46[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In47[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In48[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In49[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In50[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In51[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In52[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In53[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In54[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In55[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In56[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In57[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In58[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In59[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In60[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In61[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In62[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In63[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In64[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In65[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In66[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In67[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In68[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In69[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In70[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In71[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In72[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In73[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In74[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In75[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In76[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In77[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In78[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In79[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In80[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In81[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In82[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In83[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In84[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In85[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In86[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In87[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In88[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In89[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In90[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In91[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In92[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In93[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In94[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In95[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In96[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In97[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In98[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In99[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1397.543 ; gain = 512.746
+---------------------------------------------------------------------------------
+Warning: net PS_SRSTB has 1 drive pin and 1 bidir pins
+Warning: net PS_CLK has 1 drive pin and 1 bidir pins
+Warning: net PS_PORB has 1 drive pin and 1 bidir pins
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1397.543 ; gain = 512.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1397.543 ; gain = 512.746
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 1397.543 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_axi_dma_eth_internal_0/e31x_ps_bd_axi_dma_eth_internal_0/e31x_ps_bd_axi_dma_eth_internal_0_in_context.xdc] for cell 'e31x_ps_bd_inst/dma/axi_dma_eth_internal'
+Finished Parsing XDC File [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_axi_dma_eth_internal_0/e31x_ps_bd_axi_dma_eth_internal_0/e31x_ps_bd_axi_dma_eth_internal_0_in_context.xdc] for cell 'e31x_ps_bd_inst/dma/axi_dma_eth_internal'
+Parsing XDC File [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_axi_protocol_convert_rx_0/e31x_ps_bd_axi_protocol_convert_rx_0/e31x_ps_bd_axi_protocol_convert_rx_0_in_context.xdc] for cell 'e31x_ps_bd_inst/dma/axi_protocol_convert_rx'
+Finished Parsing XDC File [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_axi_protocol_convert_rx_0/e31x_ps_bd_axi_protocol_convert_rx_0/e31x_ps_bd_axi_protocol_convert_rx_0_in_context.xdc] for cell 'e31x_ps_bd_inst/dma/axi_protocol_convert_rx'
+Parsing XDC File [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_axi_protocol_convert_tx_0/e31x_ps_bd_axi_protocol_convert_tx_0/e31x_ps_bd_axi_protocol_convert_tx_0_in_context.xdc] for cell 'e31x_ps_bd_inst/dma/axi_protocol_convert_tx'
+Finished Parsing XDC File [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_axi_protocol_convert_tx_0/e31x_ps_bd_axi_protocol_convert_tx_0/e31x_ps_bd_axi_protocol_convert_tx_0_in_context.xdc] for cell 'e31x_ps_bd_inst/dma/axi_protocol_convert_tx'
+Parsing XDC File [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_xbar_0/e31x_ps_bd_xbar_0/e31x_ps_bd_xbar_0_in_context.xdc] for cell 'e31x_ps_bd_inst/axi_interconnect_0/xbar'
+Finished Parsing XDC File [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_xbar_0/e31x_ps_bd_xbar_0/e31x_ps_bd_xbar_0_in_context.xdc] for cell 'e31x_ps_bd_inst/axi_interconnect_0/xbar'
+Parsing XDC File [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_auto_cc_3/e31x_ps_bd_auto_cc_3/e31x_ps_bd_auto_cc_3_in_context.xdc] for cell 'e31x_ps_bd_inst/axi_interconnect_0/s00_couplers/auto_cc'
+Finished Parsing XDC File [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_auto_cc_3/e31x_ps_bd_auto_cc_3/e31x_ps_bd_auto_cc_3_in_context.xdc] for cell 'e31x_ps_bd_inst/axi_interconnect_0/s00_couplers/auto_cc'
+Parsing XDC File [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_auto_pc_0/e31x_ps_bd_auto_pc_0/e31x_ps_bd_auto_pc_0_in_context.xdc] for cell 'e31x_ps_bd_inst/axi_interconnect_0/s00_couplers/auto_pc'
+Finished Parsing XDC File [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_auto_pc_0/e31x_ps_bd_auto_pc_0/e31x_ps_bd_auto_pc_0_in_context.xdc] for cell 'e31x_ps_bd_inst/axi_interconnect_0/s00_couplers/auto_pc'
+Parsing XDC File [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_auto_cc_0/e31x_ps_bd_auto_cc_0/e31x_ps_bd_auto_cc_0_in_context.xdc] for cell 'e31x_ps_bd_inst/axi_interconnect_0/m00_couplers/auto_cc'
+Finished Parsing XDC File [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_auto_cc_0/e31x_ps_bd_auto_cc_0/e31x_ps_bd_auto_cc_0_in_context.xdc] for cell 'e31x_ps_bd_inst/axi_interconnect_0/m00_couplers/auto_cc'
+Parsing XDC File [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_auto_cc_1/e31x_ps_bd_auto_cc_1/e31x_ps_bd_auto_cc_1_in_context.xdc] for cell 'e31x_ps_bd_inst/axi_interconnect_0/m01_couplers/auto_cc'
+Finished Parsing XDC File [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_auto_cc_1/e31x_ps_bd_auto_cc_1/e31x_ps_bd_auto_cc_1_in_context.xdc] for cell 'e31x_ps_bd_inst/axi_interconnect_0/m01_couplers/auto_cc'
+Parsing XDC File [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_auto_cc_2/e31x_ps_bd_auto_cc_2/e31x_ps_bd_auto_cc_2_in_context.xdc] for cell 'e31x_ps_bd_inst/axi_interconnect_0/m02_couplers/auto_cc'
+Finished Parsing XDC File [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_auto_cc_2/e31x_ps_bd_auto_cc_2/e31x_ps_bd_auto_cc_2_in_context.xdc] for cell 'e31x_ps_bd_inst/axi_interconnect_0/m02_couplers/auto_cc'
+Parsing XDC File [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc] for cell 'e31x_ps_bd_inst/processing_system7_0'
+Finished Parsing XDC File [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc] for cell 'e31x_ps_bd_inst/processing_system7_0'
+Parsing XDC File [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_smartconnect_dma_0/e31x_ps_bd_smartconnect_dma_0/e31x_ps_bd_smartconnect_dma_0_in_context.xdc] for cell 'e31x_ps_bd_inst/smartconnect_dma'
+Finished Parsing XDC File [g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_smartconnect_dma_0/e31x_ps_bd_smartconnect_dma_0/e31x_ps_bd_smartconnect_dma_0_in_context.xdc] for cell 'e31x_ps_bd_inst/smartconnect_dma'
+Parsing XDC File [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc]
+WARNING: [Vivado 12-584] No ports matched 'CAT_CTRL_IN[2]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:142]
+WARNING: [Vivado 12-584] No ports matched 'CAT_CTRL_IN[2]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:143]
+WARNING: [Vivado 12-584] No ports matched 'CAT_CTRL_IN[3]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:150]
+WARNING: [Vivado 12-584] No ports matched 'CAT_CTRL_IN[3]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:151]
+WARNING: [Vivado 12-584] No ports matched 'CAT_CTRL_OUT[0]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:158]
+WARNING: [Vivado 12-584] No ports matched 'CAT_CTRL_OUT[0]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:159]
+WARNING: [Vivado 12-584] No ports matched 'CAT_CTRL_OUT[4]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:162]
+WARNING: [Vivado 12-584] No ports matched 'CAT_CTRL_OUT[4]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:163]
+WARNING: [Vivado 12-584] No ports matched 'CAT_CTRL_OUT[1]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:166]
+WARNING: [Vivado 12-584] No ports matched 'CAT_CTRL_OUT[1]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:167]
+WARNING: [Vivado 12-584] No ports matched 'CAT_CTRL_OUT[5]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:170]
+WARNING: [Vivado 12-584] No ports matched 'CAT_CTRL_OUT[5]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:171]
+WARNING: [Vivado 12-584] No ports matched 'CAT_CTRL_OUT[2]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:174]
+WARNING: [Vivado 12-584] No ports matched 'CAT_CTRL_OUT[2]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:175]
+WARNING: [Vivado 12-584] No ports matched 'CAT_CTRL_OUT[6]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:178]
+WARNING: [Vivado 12-584] No ports matched 'CAT_CTRL_OUT[6]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:179]
+WARNING: [Vivado 12-584] No ports matched 'CAT_CTRL_OUT[3]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:182]
+WARNING: [Vivado 12-584] No ports matched 'CAT_CTRL_OUT[3]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:183]
+WARNING: [Vivado 12-584] No ports matched 'CAT_CTRL_OUT[7]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:186]
+WARNING: [Vivado 12-584] No ports matched 'CAT_CTRL_OUT[7]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:187]
+WARNING: [Vivado 12-584] No ports matched 'CAT_RESET'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:194]
+WARNING: [Vivado 12-584] No ports matched 'CAT_RESET'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:195]
+WARNING: [Vivado 12-584] No ports matched 'CAT_CS'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:201]
+WARNING: [Vivado 12-584] No ports matched 'CAT_CS'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:202]
+WARNING: [Vivado 12-584] No ports matched 'CAT_SCLK'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:207]
+WARNING: [Vivado 12-584] No ports matched 'CAT_SCLK'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:208]
+WARNING: [Vivado 12-584] No ports matched 'CAT_MOSI'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:214]
+WARNING: [Vivado 12-584] No ports matched 'CAT_MOSI'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:215]
+WARNING: [Vivado 12-584] No ports matched 'CAT_MISO'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:221]
+WARNING: [Vivado 12-584] No ports matched 'CAT_MISO'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:222]
+WARNING: [Vivado 12-584] No ports matched 'CAT_CTRL_IN[0]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:228]
+WARNING: [Vivado 12-584] No ports matched 'CAT_CTRL_IN[0]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:229]
+WARNING: [Vivado 12-584] No ports matched 'CAT_CTRL_IN[1]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:235]
+WARNING: [Vivado 12-584] No ports matched 'CAT_CTRL_IN[1]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:236]
+WARNING: [Vivado 12-584] No ports matched 'CAT_TXNRX'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:259]
+WARNING: [Vivado 12-584] No ports matched 'CAT_TXNRX'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:260]
+WARNING: [Vivado 12-584] No ports matched 'CAT_ENABLE'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:266]
+WARNING: [Vivado 12-584] No ports matched 'CAT_ENABLE'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:267]
+WARNING: [Vivado 12-584] No ports matched 'CAT_BBCLK_OUT'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:270]
+WARNING: [Vivado 12-584] No ports matched 'CAT_BBCLK_OUT'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:271]
+WARNING: [Vivado 12-584] No ports matched 'CAT_ENAGC'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:274]
+WARNING: [Vivado 12-584] No ports matched 'CAT_ENAGC'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:275]
+WARNING: [Vivado 12-584] No ports matched 'CAT_SYNC'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:284]
+WARNING: [Vivado 12-584] No ports matched 'CAT_SYNC'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:285]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P1_D[11]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:288]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P1_D[11]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:289]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P1_D[10]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:295]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P1_D[10]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:296]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P0_D[11]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:299]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P0_D[11]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:300]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P1_D[9]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:303]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P1_D[9]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:304]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P0_D[10]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:307]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P0_D[10]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:308]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P1_D[8]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:311]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P1_D[8]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:312]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P0_D[9]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:315]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P0_D[9]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:316]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P1_D[7]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:319]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P1_D[7]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:320]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P0_D[8]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:323]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P0_D[8]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:324]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P1_D[6]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:327]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P1_D[6]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:328]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P0_D[7]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:331]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P0_D[7]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:332]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P1_D[5]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:335]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P1_D[5]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:336]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P0_D[6]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:339]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P0_D[6]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:340]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P1_D[4]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:343]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P1_D[4]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:344]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P0_D[5]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:347]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P0_D[5]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:348]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P1_D[3]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:351]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P1_D[3]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:352]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P0_D[4]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:355]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P0_D[4]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:356]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P1_D[2]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:359]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P1_D[2]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:360]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P0_D[3]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:363]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P0_D[3]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:364]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P1_D[1]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:367]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P1_D[1]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:368]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P0_D[2]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:371]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P0_D[2]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:372]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P1_D[0]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:375]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P1_D[0]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:376]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P0_D[1]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:379]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P0_D[1]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:380]
+WARNING: [Vivado 12-584] No ports matched 'CAT_TX_FRAME'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:383]
+WARNING: [Vivado 12-584] No ports matched 'CAT_TX_FRAME'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:384]
+WARNING: [Vivado 12-584] No ports matched 'CAT_TX_FRAME_N'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:386]
+WARNING: [Vivado 12-584] No ports matched 'CAT_TX_FRAME_N'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:387]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P0_D[0]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:390]
+WARNING: [Vivado 12-584] No ports matched 'CAT_P0_D[0]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:391]
+WARNING: [Vivado 12-584] No ports matched 'CAT_FB_CLK'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:394]
+WARNING: [Vivado 12-584] No ports matched 'CAT_FB_CLK'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:395]
+WARNING: [Vivado 12-584] No ports matched 'CAT_FB_CLK_N'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:397]
+WARNING: [Vivado 12-584] No ports matched 'CAT_FB_CLK_N'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:398]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc:398]
+Finished Parsing XDC File [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_pins.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/e31x_idle_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Parsing XDC File [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_timing.xdc]
+WARNING: [Vivado 12-508] No pins matched 'e31x_ps_bd_inst/processing_system7_0/inst/PS7_i/FCLKCLK[0]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_timing.xdc:26]
+WARNING: [Vivado 12-508] No pins matched 'e31x_ps_bd_inst/processing_system7_0/inst/PS7_i/FCLKCLK[1]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_timing.xdc:30]
+WARNING: [Vivado 12-508] No pins matched 'e310_io/oddr_clk/C'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_timing.xdc:50]
+WARNING: [Vivado 12-627] No clocks matched 'CAT_DATA_CLK'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_timing.xdc:57]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_timing.xdc:57]
+WARNING: [Vivado 12-627] No clocks matched 'bus_clk'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_timing.xdc:57]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_timing.xdc:57]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -include_generated_clocks CAT_DATA_CLK]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_timing.xdc:57]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_timing.xdc:57]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -include_generated_clocks bus_clk]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_timing.xdc:57]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_timing.xdc:57]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'CAT_DATA_CLK'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_timing.xdc:77]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_timing.xdc:77]
+WARNING: [Vivado 12-627] No clocks matched 'CAT_DATA_CLK'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_timing.xdc:78]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_timing.xdc:78]
+WARNING: [Vivado 12-627] No clocks matched 'CAT_DATA_CLK'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_timing.xdc:79]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_timing.xdc:79]
+WARNING: [Vivado 12-627] No clocks matched 'CAT_DATA_CLK'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_timing.xdc:80]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_timing.xdc:80]
+WARNING: [Vivado 12-646] clock 'CAT_FB_CLK' not found. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_timing.xdc:86]
+WARNING: [Vivado 12-646] clock 'CAT_FB_CLK' not found. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_timing.xdc:87]
+WARNING: [Vivado 12-646] clock 'CAT_FB_CLK' not found. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_timing.xdc:88]
+WARNING: [Vivado 12-646] clock 'CAT_FB_CLK' not found. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_timing.xdc:89]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hierarchical -filter {NAME =~ */synchronizer_false_path/stages[0].value_reg[0][*]/S}'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_timing.xdc:144]
+WARNING: [Vivado 12-508] No pins matched 'usr_access_i/DATA[*]'. [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_timing.xdc:147]
+Finished Parsing XDC File [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_timing.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_timing.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/e31x_idle_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.srcs/constrs_1/imports/e31x/e31x_timing.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/e31x_idle_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/e31x_idle_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1439.121 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1439.121 ; gain = 0.000
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1439.121 ; gain = 554.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1439.121 ; gain = 554.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ADDR[0]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ADDR[0]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ADDR[10]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ADDR[10]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ADDR[11]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ADDR[11]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ADDR[12]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ADDR[12]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ADDR[13]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ADDR[13]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ADDR[14]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ADDR[14]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ADDR[1]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ADDR[1]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ADDR[2]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ADDR[2]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ADDR[3]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ADDR[3]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ADDR[4]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 23).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ADDR[4]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ADDR[5]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 25).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ADDR[5]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 26).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ADDR[6]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 27).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ADDR[6]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 28).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ADDR[7]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 29).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ADDR[7]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 30).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ADDR[8]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 31).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ADDR[8]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 32).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ADDR[9]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 33).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ADDR[9]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 34).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_BANKADDR[0]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 35).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_BANKADDR[0]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 36).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_BANKADDR[1]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 37).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_BANKADDR[1]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 38).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_BANKADDR[2]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 39).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_BANKADDR[2]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 40).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_CAS_N. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 41).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_CAS_N. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 42).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_CKE. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 43).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_CKE. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 44).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_CS_N. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 45).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_CS_N. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 46).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_CLK. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 47).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_CLK. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 48).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_CLK_N. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 49).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_CLK_N. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 50).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DM[0]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 51).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DM[0]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 52).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DM[1]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 53).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DM[1]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 54).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DM[2]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 55).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DM[2]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 56).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DM[3]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 57).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DM[3]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 58).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQS[0]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 59).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQS[0]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 60).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQS[1]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 61).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQS[1]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 62).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQS[2]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 63).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQS[2]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 64).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQS[3]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 65).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQS[3]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 66).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQS_N[0]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 67).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQS_N[0]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 68).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQS_N[1]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 69).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQS_N[1]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 70).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQS_N[2]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 71).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQS_N[2]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 72).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQS_N[3]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 73).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQS_N[3]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 74).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQ[0]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 75).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQ[0]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 76).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQ[10]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 77).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQ[10]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 78).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQ[11]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 79).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQ[11]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 80).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQ[12]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 81).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQ[12]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 82).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQ[13]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 83).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQ[13]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 84).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQ[14]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 85).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQ[14]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 86).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQ[15]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 87).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQ[15]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 88).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQ[16]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 89).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQ[16]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 90).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQ[17]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 91).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQ[17]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 92).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQ[18]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 93).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQ[18]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 94).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQ[19]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 95).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQ[19]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 96).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQ[1]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 97).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQ[1]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 98).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQ[20]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 99).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQ[20]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 100).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQ[21]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 101).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQ[21]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 102).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQ[22]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 103).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQ[22]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 104).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQ[23]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 105).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQ[23]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 106).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQ[24]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 107).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQ[24]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 108).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQ[25]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 109).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQ[25]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 110).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQ[26]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 111).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQ[26]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 112).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQ[27]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 113).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQ[27]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 114).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQ[28]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 115).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQ[28]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 116).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQ[29]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 117).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQ[29]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 118).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQ[2]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 119).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQ[2]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 120).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQ[30]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 121).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQ[30]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 122).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQ[31]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 123).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQ[31]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 124).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQ[3]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 125).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQ[3]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 126).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQ[4]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 127).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQ[4]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 128).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQ[5]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 129).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQ[5]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 130).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQ[6]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 131).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQ[6]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 132).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQ[7]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 133).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQ[7]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 134).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQ[8]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 135).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQ[8]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 136).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_DQ[9]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 137).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_DQ[9]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 138).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_RESET_N. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 139).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_RESET_N. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 140).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ODT. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 141).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ODT. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 142).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_RAS_N. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 143).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_RAS_N. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 144).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_VRN. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 145).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_VRN. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 146).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_VRP. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 147).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_VRP. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 148).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_WE_N. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 149).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_WE_N. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 150).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[0]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 151).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[0]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 152).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[10]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 153).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[10]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 154).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[11]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 155).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[11]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 156).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[12]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 157).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[12]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 158).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[13]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 159).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[13]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 160).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[14]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 161).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[14]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 162).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[15]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 163).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[15]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 164).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[16]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 165).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[16]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 166).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[17]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 167).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[17]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 168).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[18]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 169).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[18]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 170).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[19]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 171).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[19]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 172).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[1]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 173).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[1]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 174).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[20]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 175).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[20]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 176).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[21]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 177).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[21]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 178).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[22]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 179).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[22]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 180).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[23]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 181).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[23]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 182).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[24]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 183).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[24]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 184).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[25]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 185).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[25]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 186).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[26]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 187).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[26]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 188).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[27]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 189).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[27]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 190).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[28]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 191).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[28]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 192).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[29]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 193).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[29]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 194).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[2]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 195).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[2]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 196).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[30]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 197).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[30]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 198).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[31]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 199).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[31]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 200).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[32]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 201).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[32]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 202).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[33]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 203).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[33]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 204).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[34]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 205).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[34]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 206).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[35]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 207).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[35]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 208).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[36]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 209).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[36]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 210).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[37]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 211).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[37]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 212).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[38]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 213).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[38]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 214).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[39]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 215).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[39]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 216).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[3]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 217).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[3]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 218).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[40]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 219).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[40]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 220).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[41]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 221).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[41]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 222).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[42]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 223).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[42]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 224).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[43]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 225).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[43]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 226).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[44]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 227).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[44]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 228).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[45]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 229).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[45]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 230).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[46]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 231).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[46]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 232).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[47]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 233).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[47]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 234).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[48]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 235).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[48]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 236).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[49]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 237).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[49]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 238).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[4]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 239).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[4]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 240).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[50]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 241).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[50]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 242).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[51]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 243).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[51]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 244).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[52]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 245).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[52]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 246).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[53]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 247).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[53]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 248).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[5]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 249).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[5]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 250).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[6]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 251).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[6]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 252).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[7]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 253).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[7]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 254).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[8]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 255).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[8]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 256).
+Applied set_property IO_BUFFER_TYPE = NONE for MIO[9]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 257).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MIO[9]. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 258).
+Applied set_property IO_BUFFER_TYPE = NONE for PS_CLK. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 259).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for PS_CLK. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 260).
+Applied set_property IO_BUFFER_TYPE = NONE for PS_PORB. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 261).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for PS_PORB. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 262).
+Applied set_property IO_BUFFER_TYPE = NONE for PS_SRSTB. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 263).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for PS_SRSTB. (constraint file  g:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.gen/sources_1/bd/e31x_ps_bd/ip/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0/e31x_ps_bd_processing_system7_0_0_in_context.xdc, line 264).
+Applied set_property KEEP_HIERARCHY = SOFT for e31x_ps_bd_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for e31x_ps_bd_inst/dma/axi_dma_eth_internal. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for e31x_ps_bd_inst/dma/axi_protocol_convert_rx. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for e31x_ps_bd_inst/dma/axi_protocol_convert_tx. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for e31x_ps_bd_inst/axi_interconnect_0/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for e31x_ps_bd_inst/axi_interconnect_0/s00_couplers/auto_cc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for e31x_ps_bd_inst/axi_interconnect_0/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for e31x_ps_bd_inst/axi_interconnect_0/m00_couplers/auto_cc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for e31x_ps_bd_inst/axi_interconnect_0/m01_couplers/auto_cc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for e31x_ps_bd_inst/axi_interconnect_0/m02_couplers/auto_cc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for e31x_ps_bd_inst/axi_interconnect_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for e31x_ps_bd_inst/processing_system7_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for e31x_ps_bd_inst/smartconnect_dma. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for e31x_ps_bd_inst/xlconcat_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for e31x_ps_bd_inst/xlslice_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for e31x_ps_bd_inst/GND. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1439.121 ; gain = 554.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6895] The reference checkpoint H:/RF_RADIO/uhd/fpga/usrp3/top/e31x/build-E310_SG3/e31x_project.srcs/utils_1/imports/synth_1/e31x.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1439.121 ; gain = 554.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1439.121 ; gain = 554.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1439.121 ; gain = 554.324
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : 
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 22    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1439.121 ; gain = 554.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1439.121 ; gain = 554.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1439.121 ; gain = 554.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1439.121 ; gain = 554.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1439.121 ; gain = 554.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1439.121 ; gain = 554.324
+---------------------------------------------------------------------------------
+Warning: net PS_SRSTB has 1 drive pin and 1 bidir pins
+Warning: net PS_CLK has 1 drive pin and 1 bidir pins
+Warning: net PS_PORB has 1 drive pin and 1 bidir pins
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1439.121 ; gain = 554.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1439.121 ; gain = 554.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1439.121 ; gain = 554.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1439.121 ; gain = 554.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------------------------+----------+
+|      |BlackBox name                        |Instances |
++------+-------------------------------------+----------+
+|1     |e31x_ps_bd_xbar_0                    |         1|
+|2     |e31x_ps_bd_auto_cc_0                 |         1|
+|3     |e31x_ps_bd_auto_cc_1                 |         1|
+|4     |e31x_ps_bd_auto_cc_2                 |         1|
+|5     |e31x_ps_bd_auto_cc_3                 |         1|
+|6     |e31x_ps_bd_auto_pc_0                 |         1|
+|7     |e31x_ps_bd_processing_system7_0_0    |         1|
+|8     |e31x_ps_bd_smartconnect_dma_0        |         1|
+|9     |e31x_ps_bd_axi_dma_eth_internal_0    |         1|
+|10    |e31x_ps_bd_axi_protocol_convert_rx_0 |         1|
+|11    |e31x_ps_bd_axi_protocol_convert_tx_0 |         1|
++------+-------------------------------------+----------+
+
+Report Cell Usage: 
++------+-----------------------------------+------+
+|      |Cell                               |Count |
++------+-----------------------------------+------+
+|1     |e31x_ps_bd_auto_cc                 |     4|
+|5     |e31x_ps_bd_auto_pc                 |     1|
+|6     |e31x_ps_bd_axi_dma_eth_internal    |     1|
+|7     |e31x_ps_bd_axi_protocol_convert_rx |     1|
+|8     |e31x_ps_bd_axi_protocol_convert_tx |     1|
+|9     |e31x_ps_bd_processing_system7_0    |     1|
+|10    |e31x_ps_bd_smartconnect_dma        |     1|
+|11    |e31x_ps_bd_xbar                    |     1|
+|12    |LUT1                               |     3|
+|13    |LUT2                               |     1|
+|14    |LUT4                               |     1|
+|15    |LUT5                               |     1|
+|16    |FDRE                               |    32|
++------+-----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1439.121 ; gain = 554.324
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:31 . Memory (MB): peak = 1439.121 ; gain = 512.746
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1439.121 ; gain = 554.324
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1439.121 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1449.539 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 5432bd00
+INFO: [Common 17-83] Releasing license: Synthesis
+85 Infos, 276 Warnings, 5 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1449.539 ; gain = 975.074
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'G:/FPGA/Vivado_Prj/USRP_E310/project_1/project_1.runs/synth_1/e31x_idle.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file e31x_idle_utilization_synth.rpt -pb e31x_idle_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 28 05:49:22 2023...
